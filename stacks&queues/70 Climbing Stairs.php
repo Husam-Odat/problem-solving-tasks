@@ -31,8 +31,8 @@
 class Solution
 {
     /**
-     * @param Integer $n
-     * @return Integer
+     * @param integer $n
+     * @return integer
      */
     function climbStairs($n)
     {
@@ -56,7 +56,8 @@ class Solution
 // Example
 //usage:
 $solution = new Solution();
-echo $solution->climbStairs(2) . "\n"; // Output: 2
-echo $solution->climbStairs(3) . "\n"; // Output: 3
-echo $solution->climbStairs(13) . "\n"; // Output: 377
-echo $solution->climbStairs(22) . "\n"; // Output: 28657
+// echo $solution->climbStairs(2) . "\n"; // Output: 2
+// echo $solution->climbStairs(3) . "\n"; // Output: 3
+echo $solution->climbStairs(8) . "\n"; // Output: 34
+// echo $solution->climbStairs(13) . "\n"; // Output: 377
+// echo $solution->climbStairs(22) . "\n"; // Output: 28657

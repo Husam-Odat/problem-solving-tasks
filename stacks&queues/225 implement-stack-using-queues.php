@@ -55,17 +55,26 @@ class MyStack
         $this->q2 = [];
     }
 
-    function push(int $x)
+    function push(int $x): void
     {
         array_push($this->q2, $x);
 
         while (!empty($this->q1)) {
             array_push($this->q2, array_shift($this->q1));
         }
+        echo "q1b: ";
+        print_r($this->q1);
+        echo "q2b: ";
+        print_r($this->q2);
 
         $temp = $this->q1;
         $this->q1 = $this->q2;
         $this->q2 = $temp;
+
+        echo "q1: ";
+        print_r($this->q1);
+        echo "q2: ";
+        print_r($this->q2);
     }
 
     function pop()
@@ -84,10 +93,11 @@ class MyStack
     }
 }
 
-$operations = ["MyStack", "push", "push", "top", "pop", "empty"];
-$values = [[], [1], [2], [], [], []];
+$operations = ["MyStack", "push", "push", "top", "pop", "empty", "push", "push", "top"];
+$values = [[], [1], [2], [], [], [], [3], [4], []];
 
-$stack = null;
+// $stack = null;
+$stack = new MyStack();
 $result = [];
 
 foreach ($operations as $index => $operation) {
