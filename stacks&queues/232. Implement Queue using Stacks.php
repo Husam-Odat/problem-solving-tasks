@@ -91,6 +91,13 @@ class MyQueue
 $queue = new MyQueue();
 $queue->push(1);
 $queue->push(2);
+$queue->push(3);
+$queue->push(4);
+$queue->push(5);
 echo $queue->peek() . "\n"; // Output: 1
 echo $queue->pop() . "\n"; // Output: 1
+echo $queue->peek() . "\n"; // Output: 2
+echo $queue->pop() . "\n"; // Output: 2
+echo $queue->peek() . "\n"; // Output: 3
+echo $queue->pop() . "\n"; // Output: 3
 echo ($queue->empty() ? "true" : "false") . "\n"; // Output: false

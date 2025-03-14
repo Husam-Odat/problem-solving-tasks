@@ -64,8 +64,8 @@ class Solution2
 {
 
     /**
-     * @param Integer[] $cost
-     * @return Integer
+     * @param integer[] $cost
+     * @return integer
      */
     function minCostClimbingStairs($cost)
     {
@@ -90,8 +90,8 @@ class Solution2
 class Solution
 {
     /**
-     * @param Integer[] $cost
-     * @return Integer
+     * @param integer[] $cost
+     * @return integer
      */
     function minCostClimbingStairs($cost)
     {

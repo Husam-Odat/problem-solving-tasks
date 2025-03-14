@@ -44,9 +44,9 @@ class NumArray
 
     private $prefixSum;
 
-    // /**
-    //  * @param Integer[] $nums
-    //  */
+    /**
+     * @param integer[] $nums
+     */
     function __construct($nums)
     {
         $n = count($nums);
@@ -59,11 +59,11 @@ class NumArray
         echo implode(',', $this->prefixSum) . "\n";
     }
 
-    // /**
-    //  * @param Integer $left
-    //  * @param Integer $right
-    //  * @return Integer
-    //  */
+    /**
+     * @param integer $left
+     * @param integer $right
+     * @return integer
+     */
     function sumRange($left, $right)
     {
         // Return the sum of elements from left to right using the prefix sum array
