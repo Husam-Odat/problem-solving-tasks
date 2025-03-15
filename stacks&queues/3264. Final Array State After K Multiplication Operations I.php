@@ -1,4 +1,3 @@
-?
 <?php
 
 // 3264. Final Array State After K Multiplication Operations I
@@ -77,10 +76,10 @@ class Solution
 {
 
     /**
-     * @param Integer[] $nums
-     * @param Integer $k
-     * @param Integer $multiplier
-     * @return Integer[]
+     * @param integer[] $nums
+     * @param integer $k
+     * @param integer $multiplier
+     * @return integer[]
      */
     function getFinalState($nums, $k, $multiplier)
     {
@@ -112,7 +111,3 @@ $nums2 = [1, 2];
 $k2 = 3;
 $multiplier2 = 4;
 print_r($solution->getFinalState($nums2, $k2, $multiplier2));
-
-
-
-?>
